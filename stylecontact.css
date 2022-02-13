@@ -1,0 +1,203 @@
+.bio-link:hover {
+    color: #3cbc8d;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/*design of link buttons*/
+.bio-link {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s linear, color 0.3s linear;
+  }
+
+  /*headerdesign*/
+  .headerlink{
+    background-image: linear-gradient(to right, gray, black);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem;
+    transform: color 0.3s linear;
+    }
+
+    /*headerlink hover design*/
+    .headerlink:hover{
+      color:#00ff99;
+  }
+
+/*design of body text*/
+body {
+font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+/*main design*/
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 100vh;
+  background: linear-gradient(120deg,rgba(224, 76, 76, 0.918) 50%, #ffffff 50%);
+}
+
+/*left side size and placement*/
+.main .bio,
+.main .contact {
+  margin-top: 20vh;
+}
+
+
+/*left link design and placement*/
+.main .bio .bio-link {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  float: left;
+  clear: left;
+  font-size: 0.8rem;
+  margin: 10px;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+
+}
+
+
+/*link button design*/
+.main .bio .bio-link:hover {
+    color: #3cbc8d;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+}
+
+/*get in touch text*/
+.contact {
+  color: rgba(224, 76, 76, 0.918);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+}
+
+/*input form design*/
+.main .contact form fieldset {
+  font-size: 16px;
+  position: relative;
+  border: none;
+  margin-bottom: 2px;
+
+}
+
+/*link button design*/
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration:none;
+    font-size: 15px;
+}
+
+/*input text border*/
+.main .contact form input,
+.main .contact form textarea {
+  border: 0;
+}
+
+.main .contact form input:focus,
+.main .contact form textarea:focus {
+  outline: none;
+}
+
+/*Input form general design*/
+.main .contact form input,
+.main .contact form textarea {
+  display: block;
+  padding-bottom: 10px;
+  width: 280px;
+  color:rgba(224, 76, 76, 0.918);
+  border-bottom: 1px solid black;
+  transition: border 300ms ease-in-out;
+}
+
+
+/*Input bottom border color*/
+.main .contact form input:focus,
+.main .contact form textarea:focus {
+  border-bottom: 1px solid #3cbc8d;
+}
+
+/*Input text color*/
+.main .contact form input::placeholder,
+.main .contact form textarea::placeholder {
+  color: #3cbc8d;
+}
+ 
+.contactbutton:hover{
+  cursor: pointer
+}
+
+/*button design*/
+  .contactbutton{
+      background-color: #3cbc8d;
+      border-radius: 20px;
+      color: #fff;
+      position: relative;
+    border: 2px solid #111;
+    padding: 15px 50px;
+    margin: 20px 0px 35px 0px;
+    overflow: hidden;
+  }
+
+ /*button thankyoutext*/
+.contactbutton:hover:before{
+  opacity: 1; transform: translate(0,0);
+}
+
+ /*button thankyoutext*/
+  .contactbutton:before{
+    content: attr(data-hover);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    letter-spacing: 3px;
+    font-size: 15px;
+    opacity: 0;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+  }
+  
+    /*button div animation*/
+    .contactbutton:hover div{
+      opacity: 0; transform: translate(100%,0)
+    }
+
+       /*button submit text*/
+    .contactbutton div{
+      font-size: 15px;
+      letter-spacing: 3px;
+      transition: all .3s ease-in-out;
+    }
+
+     /*Profile image*/
+    .profile-img {
+        max-width: 7em;
+        height: 7em;
+        border-radius: 50%;
+      }
+
+
+
+
+  

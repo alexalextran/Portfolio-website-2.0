@@ -1,0 +1,199 @@
+/*header design*/
+.header{
+background-image: linear-gradient(to right, gray, black);
+text-align: center;
+align-items: center;
+border-radius: 10px;
+padding: 1rem;
+}
+
+.header:hover{
+    color:#00ff99;
+}
+
+.header{
+grid-area: header;
+}
+
+/*about me div and text*/
+.about{
+grid-area: about;
+padding: 1rem;
+border-radius: 0.5rem;
+border-left: 0 solid #00ff99;
+transition: border-left 0.3s ease-in-out;
+backdrop-filter: blur(10px);
+height: 60px;
+}
+
+/*about me left border animation*/
+.about:hover {
+    border-left: 0.5rem solid #00ff99;
+  }
+  
+/*who am i div sorry got laze was supposed to change the name of it*/
+.projects{
+grid-area: projects;
+font-size: 15px;
+background-color: rgba(224, 76, 76, 0.918);
+border-radius: 0.5rem;
+border-left: 0 solid #00ff99;
+transition: border-left 300ms ease-in-out;
+}
+
+/*who am i div left border animation*/
+.projects:hover {
+    border-left: 0.5rem solid #00ff99;
+  }
+
+
+body{
+  text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url("assets/background.jpg");
+    background-position: center;
+    background-attachment:fixed;
+}
+
+/*skills and interests div size and postion*/
+.skills, .interests{
+    width: 500px;
+    height: 250px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 300px;
+    
+}
+    
+/*skills top panel design*/
+.box{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:black;
+    z-index: 9;
+    transition: transform 1s;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 110px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 54px; 
+    font-weight: 300; 
+    background-image: url(assets/skills.jpg);
+
+}
+
+/*interests top panel design*/
+.box2{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:black;
+    z-index: 9;
+    transition: transform 1s;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 110px;
+    font-family: 'Lato', sans-serif; 
+    font-size: 54px; 
+    font-weight: 300; 
+    background-image: url(assets/interests.jpg);
+
+}
+
+/*skills and interests div animation */
+.box:hover,.box2:hover
+{
+    transform: translateX(230px);
+}
+
+/*bottom panel design */
+.stack-bottom{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 10px 0px 0px 10px;
+    background-color: #3cbc8d;
+    border-radius: 10px;
+    font-family: "Times New Roman";
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+li{
+    margin: 10px 0;
+    font-size: 13px;
+    font-family: "Verdana";
+  }
+
+/*link designs*/
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration:none;
+}
+
+/*link designs */
+.link{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  /*link animation*/
+  .link:hover {
+    color: #3cbc8d;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    
+  }
+
+  /*about me text size*/
+  #am{
+    font-size: 45px;
+  
+  }
+
+  /*text design*/
+  .content p {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: background-image 500ms ease-in-out;
+    font-size: 14px;
+  }
+
+  /*underline animation design*/
+  .v1 p {
+    background-position: bottom left;
+    background-size: 0% 1px;
+    padding-top: 4px;
+    background-image: linear-gradient(black, black);
+  }
+
+  /*underline animation execution*/
+  .v1:hover p {
+    background-size: 100% 2px;
+  }
+
+  /*text padding*/
+  .v2{
+padding: 40px;
+  }

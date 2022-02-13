@@ -1,0 +1,234 @@
+  /*layout of page*/
+#layout{
+  display: grid;
+  grid-template-areas:
+  "header header header header header"
+  "nav languages languages languages languages";
+}
+
+ /*my projects design*/
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Rosario, sans-serif;
+    color:  #3cbc8d;
+    font-size: 70px;
+    text-align: center;
+  }
+  
+  /*typing animation design*/
+  .type-animation {
+    display: inline-flex;
+    width: 0;
+    overflow: hidden;
+    padding-right: 4px;
+    position: relative;
+  }
+
+  /*type animation finished*/
+  .type-animation:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -0.05em;
+    bottom: -0.05em;
+    width: 0.08em;
+    border-right: 2px solid transparent;
+  }
+
+  /*typing animation movement*/
+  .type-animation.animating {
+            animation: type 1620ms;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+  }
+
+  .type-animation.animating:after {
+            animation: cursor 320ms 8.625 ease-in-out;
+  }
+  
+  /*typing cursor animation*/
+  @keyframes cursor {
+    0%, 100% {
+    }
+    
+    50% {
+      border-color: #241b5b;
+    }
+  }
+  
+ /*Personal text typing animation keyframes */
+  @keyframes type {
+    12.5% {
+      width: 0.49em;
+    }
+   25% {
+      width: 0.98em;
+    }
+    37.5% {
+      width: 1.47em;
+    }
+    50% {
+      width: 1.96em;
+    }
+    62.5% {
+      width: 2.45em;
+    }
+    75% {
+      width: 2.94em;
+    }
+    87.5% {
+      width: 3.43em;
+    }
+    100% {
+      width: 4.4em;
+      padding-right: 0;
+    }
+  }
+
+/*background iamge and body design*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.575);
+    border-bottom: 0px;
+    background-image: url("assets/backgroundprojects.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+  }
+  
+  /* secondary header design */
+  #header {
+    background-color: rgba(224, 76, 76, 0.918); 
+    border: 2px solid rgba(0, 0, 0, 0.575);
+    grid-area: header;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /*langauges div layout*/
+#languages{
+    display: grid;
+    grid-template-areas: "java python html css";
+    grid-area: languages;
+    height: 550px;
+    border: 0px solid;
+}
+
+
+/*container for each langauage*/
+.container{
+  width: 230px;
+  height: 250px;
+  margin-top: 75px;
+  margin-left: 25px;
+  font-size: 13px;
+  transform: translateY(-50px);
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.8);
+}
+
+/*design for top and bottom panel;*/
+ .card .face{
+  width: 230px;
+  height: 250px;
+  transition: 0.4s;
+}
+
+/*design of top panel*/
+.container .card .face.face1{
+  position: relative;
+  background: rgb(78, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/*white background transtiton for both containers*/
+.container .card:hover .face.face1{
+  background: white;
+}
+
+/*transition for all panels */
+.container .card .face.face1 .content{
+  transition: 0.5s;
+}
+
+/*design for bottom panel */
+ .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.8);
+  border: solid 3px #3cbc8d;
+  border-top: solid 0px;
+  transform: translateY(-250px);
+}
+
+ .card:hover .face.face2{
+  transform: translateY(0px);
+}
+
+.java{
+  grid-area: java;
+}
+
+.python{
+  grid-area: python;
+}
+
+.html{
+  grid-area: html;
+}
+
+.css{
+  grid-area: css;
+}
+
+/*design for left nav columm*/
+  .nav{
+    border: 2px solid rgba(0, 0, 0, 0.575);
+    background-color: rgba(224, 76, 76, 0.918);
+    border-top: 0px solid black;
+    grid-area: nav;
+    padding-right: 25px;
+   
+  }
+  
+  .navlist{
+    list-style: none; 
+  }
+  
+
+  /*link designs*/
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration:none;
+}
+
+.link {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    background: rgba(255, 255, 255, 0);
+  }
+  .link:hover {
+    color: #3cbc8d;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    
+  }
